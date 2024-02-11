@@ -8,7 +8,8 @@
     "clase-2"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./clase-3/app.js"
   },
   "keywords": [],
   "author": "",
