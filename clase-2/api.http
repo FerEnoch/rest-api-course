@@ -1,0 +1,15 @@
+### recuperar información del pokemon ditto
+GET http://localhost:1234/pokemon/ditto
+
+
+### separador con comentario con 3 #
+POST http://localhost:1234/pokemon
+content-type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves": [
+    "transfer"
+  ]
+}

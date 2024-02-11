@@ -1,0 +1,25 @@
+{
+  "name": "curso-node-js-por-midudev",
+  "version": "1.0.0",
+  "description": "Best node course for 0 guita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midudev/curso-node.js.git"
+  },
+  "keywords": [
+    "curso",
+    "node",
+    "nodejs",
+    "midudev"
+  ],
+  "author": "Miguel Angel Durán García - Midudeevv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midudev/curso-node.js/issues"
+  },
+  "homepage": "https://github.com/midudev/curso-node.js#readme"
+}

@@ -1,0 +1,283 @@
+{
+  "movies": [
+    {
+      "id": "1-1-1-1",
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "duration": 142,
+      "poster": "https://www.fakeurl.com/shawshank_redemption.jpg",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rate": 9.3
+    },
+    {
+      "id": "2-2-2-2",
+      "title": "The Godfather",
+      "year": 1972,
+      "director": "Francis Ford Coppola",
+      "duration": 175,
+      "poster": "https://www.fakeurl.com/the_godfather.jpg",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rate": 9.2
+    },
+    {
+      "id": "3-3-3-3",
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "duration": 152,
+      "poster": "https://www.fakeurl.com/the_dark_knight.jpg",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "rate": 9
+    },
+    {
+      "id": "4-4-4-4",
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "director": "Quentin Tarantino",
+      "duration": 154,
+      "poster": "https://www.fakeurl.com/pulp_fiction.jpg",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "rate": 8.9
+    },
+    {
+      "id": "5-5-5-5",
+      "title": "Fight Club",
+      "year": 1999,
+      "director": "David Fincher",
+      "duration": 139,
+      "poster": "https://www.fakeurl.com/fight_club.jpg",
+      "genre": [
+        "Drama"
+      ],
+      "rate": 8.8
+    },
+    {
+      "id": "6-6-6-6",
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "duration": 148,
+      "poster": "https://www.fakeurl.com/inception.jpg",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rate": 8.7
+    },
+    {
+      "id": "7-7-7-7",
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "duration": 136,
+      "poster": "https://www.fakeurl.com/the_matrix.jpg",
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "rate": 8.7
+    },
+    {
+      "id": "8-8-8-8",
+      "title": "Forrest Gump",
+      "year": 1994,
+      "director": "Robert Zemeckis",
+      "duration": 142,
+      "poster": "https://www.fakeurl.com/forrest_gump.jpg",
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "rate": 8.8
+    },
+    {
+      "id": "9-9-9-9",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "director": "Peter Jackson",
+      "duration": 178,
+      "poster": "https://www.fakeurl.com/lotr_fellowship.jpg",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rate": 8.8
+    },
+    {
+      "id": "10-10-10-10",
+      "title": "The Lion King",
+      "year": 1994,
+      "director": "Roger Allers, Rob Minkoff",
+      "duration": 88,
+      "poster": "https://www.fakeurl.com/the_lion_king.jpg",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "rate": 8.5
+    },
+    {
+      "id": "11-11-11-11",
+      "title": "The Avengers",
+      "year": 2012,
+      "director": "Joss Whedon",
+      "duration": 143,
+      "poster": "https://www.fakeurl.com/the_avengers.jpg",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rate": 8
+    },
+    {
+      "id": "12-12-12-12",
+      "title": "The Social Network",
+      "year": 2010,
+      "director": "David Fincher",
+      "duration": 120,
+      "poster": "https://www.fakeurl.com/the_social_network.jpg",
+      "genre": [
+        "Biography",
+        "Drama"
+      ],
+      "rate": 7.7
+    },
+    {
+      "id": "13-13-13-13",
+      "title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "duration": 169,
+      "poster": "https://www.fakeurl.com/interstellar.jpg",
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rate": 8.6
+    },
+    {
+      "id": "14-14-14-14",
+      "title": "The Departed",
+      "year": 2006,
+      "director": "Martin Scorsese",
+      "duration": 151,
+      "poster": "https://www.fakeurl.com/the_departed.jpg",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rate": 8.5
+    },
+    {
+      "id": "15-15-15-15",
+      "title": "Gladiator",
+      "year": 2000,
+      "director": "Ridley Scott",
+      "duration": 155,
+      "poster": "https://www.fakeurl.com/gladiator.jpg",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rate": 8.5
+    },
+    {
+      "id": "16-16-16-16",
+      "title": "Parasite",
+      "year": 2019,
+      "director": "Bong Joon Ho",
+      "duration": 132,
+      "poster": "https://www.fakeurl.com/parasite.jpg",
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "rate": 8.6
+    },
+    {
+      "id": "17-17-17-17",
+      "title": "Joker",
+      "year": 2019,
+      "director": "Todd Phillips",
+      "duration": 122,
+      "poster": "https://www.fakeurl.com/joker.jpg",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rate": 8.4
+    },
+    {
+      "id": "18-18-18-18",
+      "title": "Unknown Movie",
+      "year": 2000,
+      "director": "Unknown Director",
+      "duration": 120,
+      "poster": "https://www.fakeurl.com/default.jpg",
+      "genre": [
+        "Unknown"
+      ],
+      "rate": 5
+    },
+    {
+      "id": "19-19-19-19",
+      "title": "Unknown Movie",
+      "year": 2000,
+      "director": "Unknown Director",
+      "duration": 120,
+      "poster": "https://www.fakeurl.com/default.jpg",
+      "genre": [
+        "Unknown"
+      ],
+      "rate": 5
+    },
+    {
+      "id": "20-20-20-20",
+      "title": "Unknown Movie",
+      "year": 2000,
+      "director": "Unknown Director",
+      "duration": 120,
+      "poster": "https://www.fakeurl.com/default.jpg",
+      "genre": [
+        "Unknown"
+      ],
+      "rate": 5
+    },
+    {
+      "id": "21-21-21-21",
+      "title": "Mad Max: Fury Road",
+      "year": 2015,
+      "director": "George Miller",
+      "duration": 120,
+      "poster": "https://www.fakeurl.com/mad_max.jpg",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rate": 8.1
+    }
+  ]
+}
