@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Probar API rest</title>
     <script type="module">
-      fetch('https://rest-api-course-dev-jabs.4.us-1.fl0.io/movies')
+      // fetch('https://rest-api-course-dev-jabs.4.us-1.fl0.io/movies')
+      fetch('http://localhost:1234/movies')
         .then(res => res.json())
         .then(movies => {
           const html = movies.map(movie => {
@@ -31,7 +32,8 @@
           const article = evt.target.closest('article')
           const id = article.dataset.id
 
-          fetch(`https://rest-api-course-dev-jabs.4.us-1.fl0.io/movies/${id}`, {
+          // fetch(`https://rest-api-course-dev-jabs.4.us-1.fl0.io/movies/${id}`, {
+          fetch(`http://localhost:1234/movies/${id}`, {
             method: 'DELETE'
           })
             .then(res => {

@@ -5,16 +5,20 @@
   "main": "index.js",
   "workspaces": [
     "clase-1",
-    "clase-2"
+    "clase-2",
+    "clase-3",
+    "clase-4"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./clase-3/app.js"
+    "start": "node ./clase-4/app.js",
+    "dev": "node --watch ./clase-4/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "2.8.5",
     "express": "4.18.2",
     "nodemon": "^3.0.3",
     "zod": "3.22.4"
