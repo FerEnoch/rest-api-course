@@ -1,4 +1,3 @@
-import { MovieModel } from '../model/local-fs/movie.js'
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
 
 // VALIDACIÓN --> Es responsabilidad del controlador comprobar el
@@ -6,10 +5,14 @@ import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
 //                necesarios y válidos antes de enviarlo al modelo.
 //                No pueden pasar de aquí datos incorrectos o maliciosos
 export class MovieController {
-  static async getAll (req, res) {
+  constructor ({ movieModel }) {
+    this.model = movieModel
+  }
+
+  getAll = async (req, res) => {
     const { genre } = req.query
 
-    const movies = await MovieModel.getAll({ genre })
+    const movies = await this.model.getAll({ genre })
 
     if (movies.length === 0) return res.status(404).json({ message: 'No movies found with provided genre' })
 
@@ -18,15 +21,15 @@ export class MovieController {
     res.json(movies)
   }
 
-  static async getById (req, res) { // --> path-to-regex (incorporada a express)
+  getById = async (req, res) => { // --> path-to-regex (incorporada a express)
     const { id } = req.params
-    const movie = await MovieModel.getById({ id })
+    const movie = await this.model.getById({ id })
     if (movie) return res.json(movie)
 
     res.status(404).json({ message: 'Movie not found' })
   }
 
-  static async create (req, res) {
+  create = async (req, res) => {
   /**
    * HAY QUE VALIDAR!... porque si no te inyectan cualquier cosa
    * NUNCA hacer:
@@ -47,12 +50,12 @@ export class MovieController {
       return res.status(400).json({ message: JSON.parse(result.error.message) })
     }
 
-    const newMovie = await MovieModel.create({ input: result.data })
+    const newMovie = await this.model.create({ input: result.data })
     // muchas veces se devuelve el recurso para actualizar la cache del cliente con la id creada
     res.status(201).json(newMovie)
   }
 
-  static async delete (req, res) {
+  delete = async (req, res) => {
   /**
     * SOLUCIONADO en middlewares con cors()
     *
@@ -63,14 +66,14 @@ export class MovieController {
     * }
     */
     const { id } = req.params
-    const result = await MovieModel.delete({ id })
+    const result = await this.model.delete({ id })
 
-    if (!result) req.status(404).json({ message: 'Movie not found' })
+    if (!result) return res.status(404).json({ message: 'Movie not found' })
 
     return res.status(200).json({ message: 'Movie deleted' })
   }
 
-  static async update (req, res) {
+  update = async (req, res) => {
   /**
    NO HACER ESTO PARA VALIDAR
    const { title, duration } = req.body
@@ -85,9 +88,9 @@ export class MovieController {
     }
 
     const { id } = req.params
-    const updatedMovie = await MovieModel.update({ id, input: result.data })
+    const updatedMovie = await this.model.update({ id, input: result.data })
 
-    if (!updatedMovie) res.status(404).json({ message: 'Movie not found' })
+    if (!updatedMovie) return res.status(404).json({ message: 'Movie not found' })
 
     res.status(200).json(updatedMovie)
   }

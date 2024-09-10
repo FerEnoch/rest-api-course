@@ -1,0 +1,38 @@
+### Recuperar todas las películas
+curl http://localhost:1234/movies
+
+### Recuperar una película por id
+GET http://localhost:1234/movies/158248ca-cc3f-11ee-a1d8-d8bbc1432dc3
+
+### Recuperar toas las películas por género
+GET http://localhost:1234/movies?genre=drama
+
+### Crear una película
+POST http://localhost:1234/movies
+content-type: application/json
+
+{
+  "title": "The lord of The Rings: The Two Towers",
+  "year": 2006,
+  "director": "Peter Jackson",
+  "duration": 188,
+  "poster": "https://i.pinimg.com/originals/ff/fb/f0/fffbf02a9712779d413e04f65bcf5f98.jpg",
+  "genre": [
+    "Adventure",
+    "Action",
+    "Drama"
+  ],
+  "rate": 9.1
+}
+
+###
+DELETE  http://localhost:1234/movies/1e075348-cc55-11ee-a1d8-d8bbc1432dc3
+
+### Actualizar una película
+# Normalmente se utilizaría POST, pero PATCH es más correcto para update
+PATCH  http://localhost:1234/movies/72679414-cb86-11ee-a1d8-d8bbc1432dc3
+Content-Type: application/json
+
+{
+  "genre": ["Comedy", "Drama", "Action"]
+}
